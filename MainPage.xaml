@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SportSyncSuggestions.MainPage"
+             BackgroundColor="#f0f4f8">
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand">
+
+        <!-- Header -->
+        <HorizontalStackLayout HorizontalOptions="Fill" Padding="0,0,0,20">
+            <Label Text="Sportsync"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   TextColor="#333333"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <!-- Horizontal Scroll for Tiles -->
+        <ScrollView Orientation="Horizontal" x:Name="TileScrollView" 
+                    HorizontalScrollBarVisibility="Never" 
+                    VerticalScrollBarVisibility="Never">
+            <HorizontalStackLayout x:Name="TileStackLayout" Spacing="25" Padding="0,0,0,20">
+                <!-- Live Updates Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Live Updates"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#a8dadc"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <!-- Social Features Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Social Features"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#457b9d"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <!-- Sponsor Management Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Sponsor Management"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#e63946"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <!-- Surveys and Polls Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Surveys and Polls"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#a8dadc"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <!-- Document Management Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Document Management"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#457b9d"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <!-- Competition History Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Competition History"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#e63946"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <!-- Event and Location Maps Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Event and Location Maps"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#a8dadc"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+
+                <!-- Logout Button -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       Padding="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       WidthRequest="180"
+                       HeightRequest="180">
+                    <Button
+                        Text="Logout"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#f4a261"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="10"
+                        LineBreakMode="WordWrap"/>
+                </Frame>
+            </HorizontalStackLayout>
+        </ScrollView>
+
+        <!-- Platzhalter für zukünftiges Bild -->
+        <BoxView Color="#e0e0e0"
+                 HeightRequest="200"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="CenterAndExpand" />
+    </VerticalStackLayout>
+</ContentPage>
